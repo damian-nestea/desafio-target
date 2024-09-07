@@ -33,3 +33,14 @@ Ao final do processamento, qual será o valor da variável SOMA?
 **f)** 2,10, 12, 16, 17, 18, 19, 200
 
 5. Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+
+**RESPOSTA**
+
+Considerando os interruptores I1, I2, I3 e as salas S1, S2 e S3:
+
+- Ligo o interruptor I1, só desligo após 5 minutos.
+- Após desligar o interruptor I1, ligo o interruptor I2.
+- **1ra ida**. Vou até a sala S1. Caso a lâmpada esteja acessa, I2 corresponde a S1. Caso a lâmpada esteja desligada, mas quente, I1 corresponde a S1. Caso a lâmpada esteja desligada e fria I3 corresponde a S1.
+- Neste ponto já descobri a correspondência entre uma sala e um interruptor, faltando descobrir apenas 2.
+- Havendo descoberto um dos interruptores e sobrando dois interruptores por descobrir, ligo um deles e o outro deixo desligado.
+- **2da ida**. Vou até a sala S2. Caso esteja ligada a lâmpada, S2 corresponderá ao interruptor acionado, caso não o interruptor corresponderá a S3.
